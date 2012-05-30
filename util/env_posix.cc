@@ -400,11 +400,9 @@ class PosixEnv : public Env {
           close(fd);
         }
       }
-<<<<<<< HEAD
       close(fd);
 #endif
-=======
->>>>>>> master
+
     } else {
       *result = new PosixRandomAccessFile(fname, fd);
     }
